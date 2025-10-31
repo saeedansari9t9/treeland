@@ -1,0 +1,108 @@
+/* Override orange theme accents on index page */
+
+/* Buttons */
+.theme-btn, .theme-btn-s2, .submit-btn { background-color: var(--primary-color) !important; }
+.theme-btn:hover, .theme-btn:focus,
+.theme-btn-s2:hover, .theme-btn-s2:focus,
+.submit-btn:hover, .submit-btn:focus { background-color: var(--hover-color) !important; }
+
+/* Section titles underline bars */
+.section-title h2:before, .section-title-s2 h2:before, .section-title-s3 h2:before, .section-title-s4 h2:before,
+.section-title h2:after, .section-title-s2 h2:after, .section-title-s3 h2:after, .section-title-s4 h2:after,
+.site-footer .widget-title h3:before, .site-footer .widget-title h3:after { background: var(--primary-color) !important; }
+
+/* Header and nav hover/current colors */
+.site-header #navbar ul a:hover,
+.site-header #navbar ul li.current a,
+.site-header #navbar > ul li a:focus { color: var(--primary-color) !important; }
+.site-header .navbar-header button { background-color: var(--primary-color) !important; }
+
+/* Pagination bullets in hero slider */
+.hero-slider .swiper-pagination-bullet-active { background: var(--primary-color) !important; }
+
+/* Forms focus */
+.form input:focus, .form textarea:focus, .form select:focus,
+.contact-section form select:focus,
+.contact-section form textarea:focus { border-color: var(--primary-color) !important; box-shadow: 0 0 5px 0 rgba(20,43,113,0.35) !important; }
+
+/* Accent text/icon colors */
+.section-title span, .section-title-s4 span,
+.about-us-section .details ul li i:before, .about-us-section-s2 .details ul li i:before,
+.blog-section .more:hover,
+.blog-section .grid h3 a:hover,
+.latest-projects-section .inner .arrow a:hover, .latest-projects-section-s2 .inner .arrow a:hover,
+.latest-projects-section .inner h3 a:hover, .latest-projects-section-s2 .inner h3 a:hover { color: var(--primary-color) !important; }
+
+/* Gallery filters underline and active color */
+.latest-projects-section .gallery-filters ul li a:after,
+.latest-projects-section-s2 .gallery-filters ul li a:after { background: var(--primary-color) !important; }
+.latest-projects-section .gallery-filters ul li a.current,
+.latest-projects-section-s2 .gallery-filters ul li a.current { color: var(--primary-color) !important; }
+
+/* Skills progress bars */
+.why-choose-us-section .skills .progress-bar { background: var(--primary-color) !important; }
+.why-choose-us-section .skills .progress .progress-bar:after { background-color: var(--primary-color) !important; }
+
+/* Team social icons */
+.team-section .team-grids ul li a { background-color: var(--primary-color) !important; }
+
+/* Footer link hovers */
+.site-footer .about-widget .social ul li a:hover { background-color: var(--primary-color) !important; border-color: var(--primary-color) !important; }
+
+/* Hide sidebar logo on desktop */
+@media (min-width: 992px) {
+    .sidebar-logo {
+        display: none !important;
+    }
+}
+
+/* Show sidebar logo only on mobile */
+@media (max-width: 991px) {
+    .sidebar-logo {
+        display: block;
+    }
+}
+.site-footer .link-widget ul a:hover,
+.site-footer .link-widget ul li:hover:before,
+.site-footer .lower-footer .short-links ul a:hover { color: var(--primary-color) !important; }
+
+/* Preloader */
+.preloader { background-color: var(--primary-color) !important; }
+
+/* Force icon colors (Themify + Flaticon) to primary color */
+[class^="ti-"], [class*=" ti-"],
+[class^="flaticon-"], [class*=" flaticon-"],
+.fi,
+[class^="ti-"]:before, [class*=" ti-"]:before,
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before { color: var(--primary-color) !important; }
+
+/* Navbar brand logo sizing and alignment */
+@media screen and (min-width: 992px) {
+  /* Set navbar to fixed height so 90px logo fits */
+  .site-header .navigation { min-height: 100px; }
+  .header-style-2 .navbar-brand { height: 100px; margin-top: 0; padding-top: 5px; padding-bottom: 5px; }
+  .header-style-2 .navbar-brand img { height: 90px !important; width: auto; }
+  /* Vertically center nav links */
+  .site-header #navbar > ul > li > a { padding: 0 20px; line-height: 100px; }
+}
+
+/* Normalize Services grid card heights */
+.services-section-s2 .service-grids { display: flex !important; flex-wrap: wrap !important; margin: 0 -15px !important; gap: 0 !important; }
+.services-section-s2 .service-grids .grid { box-sizing: border-box; float: none !important; display: flex !important; flex-direction: column !important; flex: 0 0 calc(33.333% - 30px) !important; max-width: calc(33.333% - 30px) !important; margin: 0 15px 50px !important; }
+.services-section-s2 .service-grids .img-holder { height: 220px; overflow: hidden; }
+.services-section-s2 .service-grids .img-holder img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.services-section-s2 .service-grids .details { flex: 1 1 auto; }
+
+@media (max-width: 991px) {
+  .services-section-s2 .service-grids .grid { flex: 0 0 calc(50% - 30px) !important; max-width: calc(50% - 30px) !important; }
+}
+@media (max-width: 550px) {
+  .services-section-s2 .service-grids .grid { flex: 0 0 calc(100% - 30px) !important; max-width: calc(100% - 30px) !important; }
+}
+
+/* Center the 3-member team section */
+.team-section .team-grids { display: flex; flex-wrap: wrap; justify-content: center; }
+.team-section .team-grids .grid { float: none; text-align: center; }
+.team-section .team-grids .details { text-align: center; }
+
+
